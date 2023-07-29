@@ -53,7 +53,7 @@ h1 {
   }
 }
 
-.speed-control {
+.duration-control {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -77,7 +77,7 @@ h1 {
   font-size: 14px;
 }
 
-#speed-value {
+#duration-value {
   display: flex;
   align-items: center;
   gap: 5px;
