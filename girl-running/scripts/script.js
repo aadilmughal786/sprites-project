@@ -1,14 +1,14 @@
-const range = document.getElementById("speed");
+const range = document.getElementById("duration");
 const sprite = document.querySelector(".sprite");
-const speed = document.getElementById("speed-value");
+const duration = document.getElementById("duration-value");
 
 document.addEventListener("DOMContentLoaded", () => {
-  speed.innerHTML = `Animation speed: <span class="chip">${range.value}s</span>`;
+  duration.innerHTML = `Animation duration: <span class="chip">${range.value}s</span>`;
   sprite.style.animationDuration = `${range.value}s`;
 });
 
 range.addEventListener("change", (e) => {
   let value = e.target.value;
   sprite.style.animationDuration = `${value}s`;
-  speed.innerHTML = `Animation speed: <span class="chip">${value}s</span>`;
+  duration.innerHTML = `Animation duration: <span class="chip">${value}s</span>`;
 });
