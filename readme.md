@@ -23,7 +23,9 @@ The script will create a folder with the provided project name and set up the fo
 your_project_name/
 ├── main.html
 ├── scripts/
+|   └── script.js
 ├── styles/
+|   └── style.css
 └── assets/
     └── image/
 ```
