@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./scripts/script.js"></script>
+    <title>girl-running-sprite</title>
+  </head>
+  <body>
+    <h1>Running Girl Sprite Animation</h1>
+    <img
+      src="./assets/image/girl-running.png"
+      alt="girl-running"
+      class="main-image"
+    />
+    <div class="frames">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <div class="sprite"></div>
+    <div class="speed-control">
+      <p id="speed-value"></p>
+      <div class="input">
+        <span>0s</span>
+        <input id="speed" type="range" min="0" max="5" step=".01" value=".5" />
+        <span>5s</span>
+      </div>
+    </div>
+  </body>
+</html>

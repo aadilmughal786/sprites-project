@@ -1,0 +1,84 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #306803;
+}
+
+.main-image {
+  border-bottom: 2px double #a90900;
+}
+
+.frames {
+  display: flex;
+  justify-content: space-around;
+  width: 520px;
+  margin-bottom: 10px;
+}
+
+.frames > div {
+  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border: 2px solid #a90900;
+}
+
+.sprite {
+  width: calc(520px / 4);
+  height: 130px;
+  background-image: url("../assets/image/girl-running.png");
+  background-repeat: no-repeat;
+  animation: girl-running .5s steps(4) infinite;
+}
+
+@keyframes girl-running {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -520px;
+  }
+}
+
+.speed-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.input > input {
+  width: 400px;
+}
+
+.chip {
+  background-color: #30680356;
+  padding: 2px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+#speed-value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

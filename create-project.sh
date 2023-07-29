@@ -8,6 +8,8 @@ create_project_structure() {
     mkdir "$project_name/styles"
     mkdir -p "$project_name/assets/image"
     touch "$project_name/main.html"
+    touch "$project_name/scripts/script.js"
+    touch "$project_name/styles/style.css"
 
     echo "Project '$project_name' created successfully!"
 }
